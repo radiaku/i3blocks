@@ -16,18 +16,17 @@ label=<span foreground='#88c0d0' background='#2e3440' size='x-large'></span><
 color=#000000
 markup=pango
 interval=2
-min_width=memor
 
 [cpu_usage]
 command=$HOME/.config/i3blocks/scripts/cpu_usage
 nterval=1
 LABEL=<span foreground='#81A1C1' size='large'>󱤓</span> 
 markup=pango
-min_width=cpucp
 DECIMALS=0
 
 [temperature]
 command=$HOME/.config/i3blocks/scripts/temperature
+LABEL=<span foreground='#81A1C1' size='large'>󱤓</span> 
 markup=pango
 background=#81a1c1
 interval=5
@@ -47,8 +46,17 @@ interval=1
 [rofi-powermenu]
 command=echo "<span foreground='#81a1c1' size='large'></span> "; if [ $button ]; then ~/.config/rofi/powermenu/type-1/powermenu.sh; fi
 markup=pango
-color=#D8DEE9
 interval=1
+
+[rofi-powermenu]
+command=echo "Test"
+markup=pango
+interval=1
+
+/* [rofi-powermenu] */
+/* command=echo "<span foreground='#81a1c1' size='large'></span> "; if [ $button ]; then rofi -show menu -modi 'menu:rofi-power-menu' >/dev/null; fi */
+/* markup=pango */
+/* interval=1 */
 
 /* install this to powermenu */
 /* https://github.com/adi1090x/rofi */
