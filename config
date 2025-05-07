@@ -20,7 +20,7 @@ min_width=memor
 
 [cpu_usage]
 command=$HOME/.config/i3blocks/scripts/cpu_usage
-interval=1
+nterval=1
 LABEL=<span foreground='#81A1C1' size='large'>󱤓</span> 
 markup=pango
 min_width=cpucp
@@ -45,6 +45,11 @@ color=#D8DEE9
 interval=1
 
 [rofi-powermenu]
-command=echo "<span foreground='#81a1c1' size='large'></span> "; if [ $button ]; then rofi -show menu -modi 'menu:rofi-power-menu' >/dev/null; fi
+command=echo "<span foreground='#81a1c1' size='large'></span> "; if [ $button ]; then ~/.config/rofi/powermenu/type-1/powermenu.sh; fi
 markup=pango
+color=#D8DEE9
 interval=1
+
+/* install this to powermenu */
+/* https://github.com/adi1090x/rofi */
+
